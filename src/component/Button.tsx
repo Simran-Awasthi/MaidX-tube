@@ -30,7 +30,6 @@ const buttonStyles = cva(["hover:bg-secondary-hover", "transition-colors"], {
     },
   },
 });
-const classes = buttonStyles({ size: "icon" });
 
 type ButtonProps = VariantProps<typeof buttonStyles> & ComponentProps<"button">;
 
