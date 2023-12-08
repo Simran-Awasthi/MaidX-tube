@@ -10,26 +10,23 @@ const PageHeader = () => {
       <div
         className={` gap-4 flex-shrink-0 items-center ${
           showFullWidthSearch ? "hidden" : "flex"
-        }`}
-      >
+        }`}>
         <Button variant="ghost" size="icon">
           <Menu />
         </Button>
-        <p className="text-xl font-bold font-sans  ">MADE tUBE</p>
+        <p className="text-xl font-bold font-sans">MADExTUBE</p>
       </div>
       <form
         className={`flex-grow  justify-center gap-4  ${
           showFullWidthSearch ? "flex" : " hidden  md:flex "
-        }`}
-      >
+        }`}>
         {showFullWidthSearch && (
           <Button
             onClick={() => setShowFullWidthSearch(false)}
             type="button"
             size="icon"
             variant="ghost"
-            className="flex-shrink-0"
-          >
+            className="flex-shrink-0">
             <ArrowLeft />
           </Button>
         )}
@@ -50,14 +47,12 @@ const PageHeader = () => {
       <div
         className={`flex flex-shrink-0 md:gap-2 ${
           showFullWidthSearch ? "hidden" : "flex"
-        }`}
-      >
+        }`}>
         <Button
           onClick={() => setShowFullWidthSearch(true)}
           className=" md:hidden"
           size="icon"
-          variant="ghost"
-        >
+          variant="ghost">
           <Search />
         </Button>
         <Button size="icon" variant="ghost" className="md:hidden">
